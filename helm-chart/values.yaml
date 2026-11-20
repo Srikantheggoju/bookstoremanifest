@@ -1,0 +1,9 @@
+replicaCount: 2
+
+image:
+  repository: srikantheggoju/bookstore
+  tag: "1"
+
+service:
+  type: ClusterIP
+  port: 5000

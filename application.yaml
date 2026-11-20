@@ -6,11 +6,11 @@ metadata:
 
 spec:
   destination:
-    namespace: bookstore
+    namespace: bookstore2
     server: https://kubernetes.default.svc
 
   source:
-    repoURL: https://github.com/Srikantheggoju/bookstore-gitops.git
+    repoURL: https://github.com/Srikantheggoju/manifestrepo.git
     targetRevision: HEAD
     path: helm-chart
 

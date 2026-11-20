@@ -2,7 +2,7 @@ replicaCount: 2
 
 image:
   repository: srikantheggoju/bookstore
-  tag: "1"
+  tag: "9"
 
 service:
   type: ClusterIP

@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 
 metadata:
-  name: bookstore
+  name: bookstore2
 
 spec:
   destination:

@@ -10,7 +10,7 @@ spec:
     server: https://kubernetes.default.svc
 
   source:
-    repoURL: https://github.com/Srikantheggoju/manifestrepo.git
+    repoURL: https://github.com/Srikantheggoju/bookstoremanifest.git
     targetRevision: HEAD
     path: helm-chart
 

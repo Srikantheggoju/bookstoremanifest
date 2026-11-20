@@ -2,21 +2,25 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 
 metadata:
-  name: bookstore2
+  name: bookstore
+  namespace: argocd
 
 spec:
-  destination:
-    namespace: bookstore2
-    server: https://kubernetes.default.svc
+  project: default
 
   source:
     repoURL: https://github.com/Srikantheggoju/bookstoremanifest.git
     targetRevision: HEAD
     path: helm-chart
 
-  project: default
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: bookstore2
 
   syncPolicy:
     automated:
       prune: true
       selfHeal: true
+
+    syncOptions:
+      - CreateNamespace=true
